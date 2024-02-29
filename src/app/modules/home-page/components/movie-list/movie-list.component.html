@@ -1,0 +1,22 @@
+<body>
+<header>
+  <nav>
+    <div class="title">
+      <h1>Movies</h1>
+    </div>
+    <div>
+      <ul>
+        <button type="submit" id="log-btn" class="logout-button" (click)="logout()" >Logout</button>
+      </ul>
+    </div>
+  </nav>
+</header>
+<ul class="movie-list">
+  
+  <li *ngFor="let title of movieTitles; let i = index" [routerLink]="['./movie', movieid[i]]" >
+    {{ title }}
+  </li>
+</ul>
+<router-outlet></router-outlet>
+</body>
+

@@ -1,0 +1,22 @@
+<body>
+    <div class="container">
+        <div class ="heading">Login</div>
+        <form action ="#">
+            <div class="card-details">
+                <div class="card-box">
+                    <span class ="detail"></span>
+                    <input type="email" name="txt" placeholder="Username" required=""  [(ngModel)]="loginObj.userName">
+                </div>
+                <div class="card-box">
+                    <span class ="detail"></span>
+                    <input type="password" name="pswd" placeholder="Password" required=" "  [(ngModel)]="loginObj.password">
+                </div>
+            </div>
+            <div class ="button"(click)="onLogin()">
+                <button type="submit" id="form-btn" class="login-button" >Login</button>
+            </div>
+           
+        </form>
+    </div>
+    </body>
+    
